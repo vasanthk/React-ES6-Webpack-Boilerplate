@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "jsx": "preserve",
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "target": "es6",
+        "outDir": ".tmp/ts"
+    },
+    "filesGlob": [
+        "*.ts",
+        "app/**/*.tsx",
+        "app/**/*.ts",
+        "typings/*.ts"
+    ],
+    "files": []
+}
