@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "build": "./node_modules/.bin/webpack --config webpack.config.production.js",
+    "build": "./node_modules/.bin/webpack --config webpack.config.js",
     "lint": "./node_modules/.bin/eslint ."
   },
   "repository": {
@@ -29,7 +29,8 @@
     "react-dom": "^0.14.1",
     "react-router": "^0.13.5",
     "redux": "^3.0.4",
-    "rx": "^4.0.0"
+    "rx": "^4.0.0",
+    "ts-loader": "^0.6.0"
   },
   "devDependencies": {
     "babel-core": "^5.6.18",
