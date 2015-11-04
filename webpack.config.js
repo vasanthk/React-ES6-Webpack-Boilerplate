@@ -48,7 +48,7 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:5000',
     'webpack/hot/dev-server',
-    './scripts/index'
+    './scripts/App.tsx'
   ],
   output: {
     path: __dirname,
@@ -56,7 +56,7 @@ module.exports = {
     publicPath: '/static/'
   },
   resolve: {
-    extensions: ['', '.js']
+    extensions: ['', '.js', '.jsx', '.ts', '.tsx']
   },
   devtool: 'eval-source-map',
   plugins: [
@@ -66,8 +66,8 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.jsx?$/,
-        loaders: ['babel'],
+        test: /\.tsx?$/,
+        loaders: ['babel', 'ts'],
         include: path.join(__dirname, 'scripts')
       }
     ]
