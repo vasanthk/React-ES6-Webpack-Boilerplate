@@ -26,3 +26,10 @@ ESLint with React linting options have been enabled.
 npm run lint
 ```
 
+### Run with Docker
+
+```
+docker build -t react-es6-webpack-boilerplate .
+docker run -d -p 5000:5000 --name reac react-es6-webpack-boilerplate
+Point to http://0.0.0.0:5000/
+```
