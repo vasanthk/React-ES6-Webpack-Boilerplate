@@ -1,0 +1,29 @@
+{
+  "name": "b2b-travel-system",
+  "version": "1.0.0",
+  "homepage": "https://github.com/gkawin/b2b-travel-system",
+  "authors": [
+    "Kawin Glomjai <g.kawin@live.com>"
+  ],
+  "description": "B2B Travel system",
+  "main": "server.js",
+  "keywords": [
+    "B2B",
+    "online",
+    "travel",
+    "system"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.5.0",
+    "jquery": "~2.2.0",
+    "uikit": "~2.24.3"
+  }
+}

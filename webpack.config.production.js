@@ -39,8 +39,8 @@
  */
 
 /* eslint-disable no-var */
-var webpack = require('webpack');
-var path = require('path');
+var webpack = require('webpack')
+var path = require('path')
 
 module.exports = {
   entry: './scripts/index',
@@ -75,4 +75,4 @@ module.exports = {
       }
     ]
   }
-};
+}

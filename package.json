@@ -1,8 +1,8 @@
 {
-  "name": "react-es6-webpack-boilerplate",
-  "version": "4.0.0",
-  "description": "Boilerplate for kick starting a React Project with ES6 (Babel) and Hot reloader using Webpack.",
-  "main": "index.js",
+  "name": "b2b-travel-system",
+  "version": "1.0.0",
+  "description": "B2B travel system.",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "build": "./node_modules/.bin/webpack --config webpack.config.production.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vasanthk/react-es6-webpack-boilerplate.git"
+    "url": "https://github.com/gkawin/b2b-travel-system.git"
   },
   "keywords": [
     "react",
@@ -18,16 +18,20 @@
     "babel",
     "webpack"
   ],
-  "author": "Vasanth Krishnamoorthy (http://www.vasanthk.com)",
+  "author": "Kawin Glomjai",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vasanthk/react-es6-webpack-boilerplate/issues"
+    "url": "https://github.com/gkawin/b2b-travel-system/issues"
   },
-  "homepage": "https://github.com/vasanthk/react-es6-webpack-boilerplate",
+  "homepage": "https://github.com/gkawin/b2b-travel-system",
   "dependencies": {
+    "babel-runtime": "^6.3.19",
+    "bower": "^1.7.7",
+    "hapi": "^12.1.0",
+    "history": "^1.17.0",
     "react": "^0.14.5",
     "react-dom": "^0.14.5",
-    "babel-runtime": "^6.3.19"
+    "react-router": "^1.0.3"
   },
   "devDependencies": {
     "babel-core": "^6.3.21",
