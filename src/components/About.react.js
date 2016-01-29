@@ -1,5 +1,6 @@
+
 const React = require('react')
 
 module.exports = () => (
-  <div>HELLO WORLDS</div>
+  <div>About Page</div>
 )

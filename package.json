@@ -27,8 +27,11 @@
   "dependencies": {
     "babel-runtime": "^6.3.19",
     "bower": "^1.7.7",
+    "hapi": "^12.1.0",
+    "history": "^1.17.0",
     "react": "^0.14.5",
-    "react-dom": "^0.14.5"
+    "react-dom": "^0.14.5",
+    "react-router": "^1.0.3"
   },
   "devDependencies": {
     "babel-core": "^6.3.21",
