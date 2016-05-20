@@ -1,4 +1,16 @@
+*.project
 npm-debug.log
+npm-debug.log.*
 node_modules
 *.iml
 dist
+node_modules/**/*
+*.iml
+.settings.xml
+.idea
+.config
+.node-gyp
+.npm
+tmp
+.npmcache
+npmcache
