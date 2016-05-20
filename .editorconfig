@@ -1,5 +1,6 @@
 # EditorConfig is awesome: http://EditorConfig.org
 root = true
+trim_trailing_whitespac = true
 
 [*.{js,jsx,json}]
 end_of_line = lf
