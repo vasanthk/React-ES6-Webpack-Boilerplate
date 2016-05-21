@@ -1,6 +1,6 @@
 {
-  "name": "react-es6-webpack-boilerplate",
-  "version": "4.0.0",
+  "name": "react-thor-es6-webpack-boilerplate",
+  "version": "5.0.0",
   "description": "Boilerplate for kick starting a React Project with ES6 (Babel) and Hot reloader using Webpack.",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vasanthk/react-es6-webpack-boilerplate.git"
+    "url": "https://github.com/scherler/react-es6-webpack-boilerplate.git"
   },
   "keywords": [
     "react",
@@ -18,15 +18,33 @@
     "babel",
     "webpack"
   ],
-  "author": "Vasanth Krishnamoorthy (http://www.vasanthk.com)",
+  "author": "Thorsten Scherler <https://github.com/scherler>",
+  "contributors": [
+    {
+      "name": "Vasanth Krishnamoorthy (http://www.vasanthk.com) - original author",
+      "email": "vasanth.krishnamoorthy@citrix.com>"
+    },
+    {
+      "name": "Nathaniel Charles",
+      "email": "oepnoepn@gmail.com"
+    },
+    {
+      "name": "Thorsten Scherler",
+      "email": "https://github.com/scherler aka scherler"
+    },
+    {
+      "name": "Charles Vandevoorde",
+      "email": "charles.vandevoorde@hotmail.be"
+    }
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vasanthk/react-es6-webpack-boilerplate/issues"
+    "url": "https://github.com/scherler/react-es6-webpack-boilerplate/issues"
   },
-  "homepage": "https://github.com/vasanthk/react-es6-webpack-boilerplate",
+  "homepage": "https://github.com/scherler/react-es6-webpack-boilerplate",
   "dependencies": {
     "react": "^15.0.2",
-    "react-dom": "^15.0.2",
+    "react-dom": "^15.1.0",
     "babel-runtime": "^6.9.0"
   },
   "devDependencies": {

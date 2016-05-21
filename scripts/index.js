@@ -4,7 +4,6 @@ import {renderToString} from 'react-dom/server';
 import App from './App';
 
 if (typeof document !== 'undefined') {
-  console.log('xxxx')
   render(
     <App />,
     document.getElementById('root')
