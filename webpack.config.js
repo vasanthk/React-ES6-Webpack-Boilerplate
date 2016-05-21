@@ -44,6 +44,7 @@
 var webpack = require('webpack');
 var path = require('path');
 
+
 module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:5000',
@@ -56,7 +57,7 @@ module.exports = {
     publicPath: '/static/'
   },
   resolve: {
-    extensions: ['', '.js']
+    extensions: ['', '.js', 'jsx']
   },
   devtool: 'eval-source-map',
   plugins: [
