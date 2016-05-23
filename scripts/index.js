@@ -10,6 +10,8 @@ if (typeof document !== 'undefined') {
   );
 }
 
-module.exports = function(path, props, render) {
-  render('<!doctype html>' + renderToString(<App/>));
+module.exports = function(path, locals, render) {
+  setTimeout(function() {
+    render(locals.template({ html: renderToString(<App/>)}));
+  }, 10);
 };

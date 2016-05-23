@@ -41,8 +41,12 @@
 /* eslint-disable no-var */
 var webpack = require('webpack');
 var path = require('path');
+var ejs = require('ejs');
+var fs = require('fs');
 var StaticSiteGeneratorPlugin = require('static-render-webpack-plugin');
 
+var temp = ejs.compile(fs.readFileSync(__dirname + '/template.ejs', 'utf-8'))
+const template = { template: temp };
 module.exports = {
   entry: './scripts/index',
   output: {
@@ -70,7 +74,7 @@ module.exports = {
         warnings: false
       }
     }),
-    new StaticSiteGeneratorPlugin('bundle.js', ['/'])
+    new StaticSiteGeneratorPlugin('bundle.js', ['/'], template)
   ],
   module: {
     loaders: [
