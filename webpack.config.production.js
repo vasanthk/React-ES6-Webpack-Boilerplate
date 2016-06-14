@@ -41,16 +41,25 @@
 /* eslint-disable no-var */
 var webpack = require('webpack');
 var path = require('path');
+var ejs = require('ejs');
+var fs = require('fs');
+var StaticSiteGeneratorPlugin = require('static-render-webpack-plugin');
 
+var temp = ejs.compile(fs.readFileSync(__dirname + '/template.ejs', 'utf-8'))
+const template = { template: temp };
 module.exports = {
   entry: './scripts/index',
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/'
+    /**
+     * This is really important, the plugin expects the
+     * bundle output to export a function
+     */
+    libraryTarget: 'umd'
   },
   resolve: {
-    extensions: ['', '.js']
+    extensions: ['', '.js', 'jsx']
   },
   devtool: 'source-map',
   plugins: [
@@ -64,13 +73,15 @@ module.exports = {
       compress: {
         warnings: false
       }
-    })
+    }),
+    new StaticSiteGeneratorPlugin('bundle.js', ['/'], template)
   ],
   module: {
     loaders: [
       {
-        test: /\.jsx?$/,
+        test: /\.(jsx|js)$/,
         loaders: ['babel'],
+        exclude: /node_modules/,
         include: path.join(__dirname, 'scripts')
       }
     ]
